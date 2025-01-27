@@ -27,7 +27,7 @@ function App() {
     setMessages((prevMessages) => [...prevMessages, userMessage]);
 
     try {
-      const response = await fetch('http://localhost:3000/run-flow', {
+      const response = await fetch('https://cmr-1.onrender.com/run-flow', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
